@@ -69,50 +69,75 @@
       class="flex flex-col gap-10 mt-4 md:mt-6 sm:px-20 md:px-36 lg:px-52 xl:px-64 font-medium"
     >
       <!-- About me -->
-      <section class="flex flex-col border-2 border-txt_secondary rounded p-4">
-        <div class="flex justify-between">
-          <div class="text-2xl md:text-3xl font-bold uppercase">
-            Enrico Favale
-          </div>
+      <section class="flex flex-row border-2 border-txt_secondary rounded p-4 gap-4">
 
-          <div class="hidden sm:flex gap-2 items-center">
-            <a
-              href="https://github.com/enrico-favale"
-              target="_blank"
-              class="border border-txt_secondary rounded itmes-center flex justify-center p-2"
-            >
-              <i class="fa fa-github"></i>
-            </a>
+        <!-- Image in about me (show only on desktop) -->
+        <div class="w-36 h-36 perspective hidden xl:flex shrink-0">
+          <div id="animated-image-container" class="relative w-full h-full">
+            <!-- Image front -->
+            <img
+              id="front-image"
+              src="assets/img/first.jpeg"
+              alt="Front Photo"
+              class="rounded-full object-cover object-right-top w-full h-full absolute"
+            />
 
-            <a
-              href="mailto:enrico.favale@outlook.it"
-              target="_blank"
-              class="border border-txt_secondary rounded items-center flex justify-center p-2"
-            >
-              <i class="fa fa-envelope"></i>
-            </a>
+            <!-- Image back -->
+            <img
+              id="back-image"
+              src="assets/img/second.jpeg"
+              alt="Back Photo"
+              class="rounded-full object-cover w-full h-full absolute"
+              style="object-position: 50% -20px"
+            />
           </div>
         </div>
 
-        <span class="text-txt_secondary">
-          <i class="fa fa-map-marker"></i>
-          Ferrara, Italy
-        </span>
-
-        <div class="pt-2">
-          <span class="font-bold">Graduate student</span> with a strong passion
-          for <span class="font-bold underline">web development</span> and a
-          <span class="font-bold underline">nerdy heart</span>. Currently
-          expanding my knowledge by diving into the rabbit hole of
-          <span class="font-bold underline">Artificial Intelligence</span>. How
-          can will I use this knowledge to make a difference in the world?
+        <div>
+          <div class="flex justify-between">
+            <div class="text-2xl md:text-3xl font-bold uppercase">
+              Enrico Favale
+            </div>
+  
+            <div class="hidden sm:flex gap-2 items-center">
+              <a
+                href="https://github.com/enrico-favale"
+                target="_blank"
+                class="border border-txt_secondary rounded itmes-center flex justify-center p-2"
+              >
+                <i class="fa fa-github"></i>
+              </a>
+  
+              <a
+                href="mailto:enrico.favale@outlook.it"
+                target="_blank"
+                class="border border-txt_secondary rounded items-center flex justify-center p-2"
+              >
+                <i class="fa fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+  
+          <span class="text-txt_secondary">
+            <i class="fa fa-map-marker"></i>
+            Ferrara, Italy
+          </span>
+  
+          <div class="pt-2">
+            <span class="font-bold">Graduate student</span> with a strong passion
+            for <span class="font-bold underline">web development</span> and a
+            <span class="font-bold underline">nerdy heart</span>. Currently
+            expanding my knowledge by diving into the rabbit hole of
+            <span class="font-bold underline">Artificial Intelligence</span>. How
+            can will I use this knowledge to make a difference in the world?
+          </div>
         </div>
       </section>
 
       <!-- Image and phrase -->
-      <section class="flex flex-row items-center justify-center">
-        <!-- Image -->
-        <div class="w-48 h-48 perspective">
+      <section class="flex flex-col xl:flex-row items-center justify-center">
+        <!-- Image (not show on desktop) -->
+        <div class="w-48 h-48 perspective xl:hidden">
           <div id="animated-image-container" class="relative w-full h-full">
             <!-- Fronte della foto -->
             <img
@@ -131,6 +156,17 @@
               style="object-position: 50% -20px"
             />
           </div>
+        </div>
+
+        <!-- Phrase -->
+        <div class="text-center text-txt_secondary italic max-w-sm pt-4 xl:pt-0 flex flex-col">
+          <span>
+            "Happiness can be found, even in the darkest of times, if one only remembers to turn on the light."
+          </span>
+
+          <span class="pt-2">
+            - Dumbledore -
+          </span>
         </div>
       </section>
 
