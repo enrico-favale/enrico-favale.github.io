@@ -56,8 +56,8 @@
     <title>Enrico Favale</title>
   </head>
 
-  <body class="bg-bg_main text-txt_main font-mono px-14 py-6">
-    <header class="flex flex-col">
+  <body class="bg-bg_main text-txt_main font-mono m-0 px-14 py-6">
+    <header class="flex flex-col hidden">
       <!-- Navbar -->
       <div class="hidden sm:flex font-bold">sm</div>
       <div class="hidden md:flex font-bold">md</div>
@@ -66,11 +66,11 @@
     </header>
 
     <main
-      class="flex flex-col gap-6 mt-4 md:mt-6 sm:px-20 md:px-36 lg:px-52 xl:px-96 font-medium"
+      class="flex flex-col gap-6 my-4 md:my-6 sm:px-20 md:px-36 lg:px-52 xl:px-96 font-medium"
     >
       <!-- About me -->
       <section
-        class="flex flex-row border-2 border-txt_secondary rounded p-4 gap-4"
+        class="flex flex-row border-2 border-txt_secondary rounded-lg p-4 gap-4"
       >
         <!-- Image in about me (show only on desktop) -->
         <div class="w-36 h-36 perspective hidden xl:flex shrink-0">
@@ -136,8 +136,8 @@
         </div>
       </section>
 
-      <!-- Image and phrase -->
-      <section class="flex flex-col xl:flex-row items-center justify-center">
+      <!-- Image, cite and link to About me page -->
+      <section class="flex flex-col xl:flex-col items-center justify-center">
         <!-- Image (not show on desktop) -->
         <div class="w-48 h-48 perspective xl:hidden mb-4">
           <div id="animated-image-container" class="relative w-full h-full">
@@ -170,6 +170,15 @@
           </span>
 
           <span class="pt-2"> - Dumbledore - </span>
+        </div>
+
+        <!-- Link to About me page -->
+        <div class="flex justify-center items-center mt-2">
+          <a
+            href="pages/about-me.html"
+            class="border-2 border-txt_secondary rounded-lg uppercase p-2 transition-all duration-300 hover:border-txt_main"
+            >learn more about me</a
+          >
         </div>
       </section>
 
@@ -279,6 +288,15 @@
               </div>
             </div>
           </div>
+
+          <!-- Link to Education page -->
+          <div class="flex mx-4">
+            <a
+              href="pages/education.html"
+              class="border-2 border-txt_secondary rounded-lg uppercase p-2 transition-all duration-300 hover:border-txt_main"
+              >learn more about my education</a
+            >
+          </div>
         </div>
       </section>
 
@@ -341,7 +359,6 @@
             <span class="border-l pl-2">
               Contact me for questions or collaboration
             </span>
-            
           </a>
 
           <!-- Instagram -->
