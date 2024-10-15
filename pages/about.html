@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Enrico Favale Portfolio" />
+    <meta name="author" content="Enrico Favale" />
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:site_name" content="Enrico Favle About" />
+    <meta property="og:title" content="About | Enrico Favale" />
+    <meta
+      property="og:description"
+      content="Offical webpage of Enrico Favale"
+    />
+    <meta property="og:url" content="https://enrico-favale.github.io/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Personal css -->
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/img-animation.css" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Tailwind script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind personalization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              txt_main: "#ebebeb",
+              txt_secondary: "#888888",
+              bg_main: "#111111",
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>About | Enrico Favale</title>
+  </head>
+
+  <body class="bg-bg_main text-txt_main font-mono m-0 px-14 py-6">
+    <header class="flex flex-col">
+      <!-- Navbar -->
+      <div class="hidden sm:flex font-bold">sm</div>
+      <div class="hidden md:flex font-bold">md</div>
+      <div class="hidden lg:flex font-bold">lg</div>
+      <div class="hidden xl:flex font-bold">xl</div>
+    </header>
+
+    <main
+      class="flex flex-col gap-4 my-4 md:my-6 sm:px-20 md:px-36 lg:px-52 xl:px-96 font-medium"
+    >
+      <!-- About me section -->
+      <section class="flex flex-col gap-4">
+        <span class="text-2xl md:text-3xl font-bold uppercase">About me</span>
+
+        <div class="flex flex-col gap-4">
+          <p class="text-justify border-l-2 border-txt_secondary pl-4 ml-4">
+            I am a
+            <span class="font-bold underline">graduate student</span> with a
+            strong passion for <span class="font-bold">web development</span>.
+            My journey began by building websites and
+            <span class="font-bold">web applications</span>, driven by a love
+            for <span class="font-bold underline">problem-solving</span> and
+            creating seamless <span class="font-bold">user experiences</span>.
+          </p>
+
+          <p class="text-justify border-l-2 border-txt_secondary pl-4 ml-4">
+            Currently, I’m pursuing a
+            <span class="font-bold">Master’s in Artificial Intelligence</span>,
+            expanding my skills in <span class="font-bold">AI</span>,
+            <span class="font-bold">Data Science</span>, and
+            <span class="font-bold">Machine Learning</span>. This new focus
+            complements my
+            <span class="font-bold">web development</span> background, allowing
+            me to explore how <span class="font-bold underline">AI</span> can
+            enhance modern
+            <span class="font-bold underline">web technologies</span>.
+          </p>
+
+          <p class="text-justify border-l-2 border-txt_secondary pl-4 ml-4">
+            I aim to combine my
+            <span class="font-bold">web development</span> experience with
+            <span class="font-bold">AI</span> to create innovative,
+            <span class="font-bold underline">smart applications</span> that
+            solve
+            <span class="font-bold underline">real-world problems</span> and
+            improve the way we interact with
+            <span class="font-bold">technology</span>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Education section -->
+      <section class="flex flex-col gap-4">
+        <span class="text-2xl md:text-3xl font-bold uppercase">Education</span>
+
+        <div class="flex flex-col gap-4 justify-center">
+          <!-- Magistrale -->
+          <div class="mx-4 border-l-2 border-txt_secondary">
+            <div class="flex">
+              <!-- Logo -->
+              <img
+                src="../assets/img/logo-UNIFE.png"
+                alt="Logo UNIFE"
+                class="w-20 h-20 object-cover object-center ml-4"
+              />
+
+              <!-- Text -->
+              <div class="ml-4">
+                <!-- Title -->
+                <span class="sm:text-lg font-bold">
+                  <a href="https://corsi.unife.it/lm-ia" target="_blank">
+                    M.Sc. in Artificial Intelligence, Data Science and Big Data
+                  </a>
+                </span>
+
+                <!-- Description for desktops-->
+                <div class="hidden xl:flex flex-col">
+                  <!-- University of Ferrara -->
+                  <span class="font-semibold">University of Ferrara</span>
+                  <!-- Dates -->
+                  <span class="text-txt_secondary text-sm">
+                    <i class="fa fa-calendar"></i>
+                    Sept 2024 - Ongoing
+                  </span>
+                  <!-- Grade -->
+                  <span>Grade: _/110</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Description not for desktops-->
+            <div class="flex flex-col mx-4 mt-2">
+              <!-- University of Ferrara -->
+              <span class="xl:hidden font-semibold">University of Ferrara</span>
+              <!-- Dates -->
+              <span class="xl:hidden text-txt_secondary text-sm">
+                <i class="fa fa-calendar"></i>
+                Sept 2024 - Ongoing
+              </span>
+              <!-- Grade -->
+              <span class="xl:hidden">Grade: _/110</span>
+
+              <!-- Topics -->
+              <div class="my-1 flex text-justify text-txt_secondary">
+                <div class="font-semibold text-txt_main">Topics:</div>
+                <div class="ml-2">
+                  <ul>
+                    <li>
+                      - Artificial Intelligence concepts and applications.
+                    </li>
+                    <li>- Machine Learning algorithms and techniques.</li>
+                    <li>- Data mining and data analysis.</li>
+                    <li>
+                      - Big Data technologies and frameworks.
+                    </li>
+                    <li>- Neural networks and deep learning.</li>
+                    <li>- Statistical analysis and predictive modeling.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Technologies -->
+              <p class="my-1 text-justify text-txt_secondary">
+                <span class="font-semibold text-txt_main">Technologies:</span>
+                Python, Java, Prolog, Julia...
+              </p>
+            </div>
+          </div>
+
+          <!-- Triennale -->
+          <div class="mx-4 border-l-2 border-txt_secondary">
+            <div class="flex">
+              <!-- Logo -->
+              <img
+                src="../assets/img/logo-UNIFE.png"
+                alt="Logo UNIFE"
+                class="w-20 h-20 object-cover object-center ml-4"
+              />
+
+              <!-- Text -->
+              <div class="ml-4">
+                <!-- Title -->
+                <span class="sm:text-lg font-bold">
+                  <a href="https://corsi.unife.it/informatica" target="_blank">
+                    B.Sc. in Computer Science
+                  </a>
+                </span>
+                <!-- Description for desktops-->
+                <div class="hidden xl:flex xl:flex-col">
+                  <!-- University of Ferrara -->
+                  <span class="font-semibold">University of Ferrara</span>
+                  <!-- Dates -->
+                  <span class="text-txt_secondary text-sm">
+                    <i class="fa fa-calendar"></i>
+                    Sept 2021 - Jul 2024
+                  </span>
+                  <!-- Grade -->
+                  <span>Grade: 104/110</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Description not for desktops-->
+            <div class="flex flex-col mx-4 mt-2">
+              <!-- University of Ferrara -->
+              <span class="xl:hidden font-semibold">University of Ferrara</span>
+              <!-- Dates -->
+              <span class="xl:hidden text-txt_secondary text-sm">
+                <i class="fa fa-calendar"></i>
+                Sept 2021 - Jul 2024
+              </span>
+              <!-- Grade -->
+              <span class="xl:hidden">Grade: 104/110</span>
+
+              <!-- Thesis -->
+              <div class="my-1 flex text-justify text-txt_secondary">
+                <div class="font-semibold text-txt_main">Thesis:</div>
+                <div class="ml-2">
+                  TRAMA: A Case Study for the Design and Development of Real-Time Applications
+                </div>
+              </div>
+
+              <!-- Topics -->
+              <div class="my-1 flex text-justify text-txt_secondary">
+                <div class="font-semibold text-txt_main">Topics:</div>
+                <div class="ml-2">
+                  <ul>
+                    <li>- Advanced algorithms and data structures.</li>
+                    <li>
+                      - Software engineering principles and methodologies.
+                    </li>
+                    <li>- Web development and design.</li>
+                    <li>- Database design and management.</li>
+                    <li>- Object-oriented programming.</li>
+                    <li>- Computer networks and protocols.</li>
+                    <li>- Operating systems concepts.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Technologies -->
+              <p class="my-1 text-justify text-txt_secondary">
+                <span class="font-semibold text-txt_main">Technologies:</span>
+                Assembly, Bash, R, MatLab, C, Java, Python, Laravel, HTML, CSS,
+                JavaScript, PHP, SQL.
+              </p>
+            </div>
+          </div>
+
+          <!-- Diploma -->
+          <div class="mx-4 border-l-2 border-txt_secondary">
+            <div class="flex">
+              <!-- Logo -->
+              <img
+                src="../assets/img/logo-Pentasuglia.png"
+                alt="Logo UNIFE"
+                class="w-20 h-20 rounded-full object-cover object-center transform scale-110 ml-4"
+              />
+
+              <!-- Text -->
+              <div class="ml-4">
+                <!-- Title -->
+                <span class="sm:text-lg font-bold">
+                  <a
+                    href="https://www.iispentasuglia.edu.it/indirizzo-di-studio/informatica-e-telecomunicazioni/"
+                    target="_blank"
+                  >
+                    Technical High School Diploma, Computer Science
+                  </a>
+                </span>
+
+                <!-- Description for desktops-->
+                <div class="hidden xl:flex xl:flex-col">
+                  <!-- IIS G.B. Pentasuglia - Matera -->
+                  <span class="font-semibold"
+                    >IIS G.B. Pentasuglia - Matera</span
+                  >
+                  <!-- Dates -->
+                  <span class="text-txt_secondary text-sm">
+                    <i class="fa fa-calendar"></i>
+                    Sept 2016 - Jul 2021
+                  </span>
+                  <!-- Grade -->
+                  <span>Grade: 100/100</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Description not for desktops-->
+            <div class="flex flex-col mx-4 mt-2">
+              <!-- IIS G.B. Pentasuglia - Matera -->
+              <span class="xl:hidden font-semibold"
+                >IIS G.B. Pentasuglia - Matera</span
+              >
+              <!-- Dates -->
+              <span class="xl:hidden text-txt_secondary text-sm">
+                <i class="fa fa-calendar"></i>
+                Sept 2016 - Jul 2021
+              </span>
+              <!-- Grade -->
+              <span class="xl:hidden">Grade: 100/100</span>
+
+              <!-- Topics -->
+              <div class="my-1 flex text-justify text-txt_secondary">
+                <div class="font-semibold text-txt_main">Topics:</div>
+                <div class="ml-2">
+                  <ul>
+                    <li>- Basics of algorithms and data structures.</li>
+                    <li>
+                      - Creation of simple websites with logic and databases.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Technologies -->
+              <p class="my-1 text-justify text-txt_secondary">
+                <span class="font-semibold text-txt_main">Technologies:</span>
+                C, C++, Java, Python, HTML, CSS, JavaScript, PHP, SQL.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
