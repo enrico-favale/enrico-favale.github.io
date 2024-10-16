@@ -29,11 +29,14 @@
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/img-animation.css" />
 
-    <!-- FontAwesome -->
+    <!-- FontAwesome for icons-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
+    <!-- Devicon for icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
     <!-- Tailwind script -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -187,12 +190,43 @@
       </section>
 
       <!-- Technologies -->
-      <section class="flex flex-col" id="technologies">
-        <span
-          class="uppercase font-bold border-y-2 border-txt_secondary py-2 px-4"
-        >
+      <section class="flex flex-col gap-2" id="technologies">
+        <span class="uppercase font-bold border-y-2 border-txt_secondary py-2 px-4">
           Technologies
         </span>
+
+        <div class="flex flex-col xl:flex-row lg:flex-row justify-between mx-4">
+          <div>
+            <span class="uppercase font-bold">Web technologies</span>
+            <div class="flex flex-col items-left border-l-2 border-txt_secondary pl-2 gap-2">
+              <span class="flex items-center gap-2"><i class="devicon-javascript-plain text-2xl"></i>Javascript</span>
+              <span class="flex items-center gap-2"><i class="devicon-html5-plain-wordmark text-2xl"></i>HTML</span>
+              <span class="flex items-center gap-2"><i class="devicon-css3-plain-wordmark text-2xl"></i>CSS</span>
+              <span class="flex items-center gap-2"><i class="devicon-tailwindcss-original text-2xl"></i>Tailwind CSS</span>
+              <span class="flex items-center gap-2"><i class="devicon-laravel-original text-2xl"></i>Laravel</span>
+              <span class="flex items-center gap-2"><i class="devicon-react-original text-2xl"></i>React</span>
+              <span class="flex items-center gap-2"><i class="devicon-php-plain text-2xl"></i>PHP</span>
+            </div>
+          </div>
+
+          <div>
+            <span class="uppercase font-bold">Languages</span>
+            <div class="flex flex-col items-left border-l-2 border-txt_secondary pl-2 gap-2">
+              <span class="flex items-center gap-2"><i class="devicon-python-plain text-2xl"></i>Python</span>
+              <span class="flex items-center gap-2"><i class="devicon-c-plain text-2xl"></i>C</span>
+              <span class="flex items-center gap-2"><i class="devicon-cplusplus-plain text-2xl"></i>C++</span>
+              <span class="flex items-center gap-2"><i class="devicon-java-plain text-2xl"></i>Java</span>
+              <span class="flex items-center gap-2"><i class="devicon-bash-plain text-2xl"></i>BASH</span>
+            </div>
+          </div>
+
+          <div>
+            <span class="uppercase font-bold">Databases</span>
+            <div class="flex flex-col items-left border-l-2 border-txt_secondary pl-2 gap-2">
+              <span class="flex items-center gap-2"><i class="devicon-mysql-original text-2xl"></i>MySql</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Projects -->
