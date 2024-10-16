@@ -66,11 +66,12 @@
   <body class="bg-bg_main text-txt_main font-mono m-0 px-14 my-2">
     <header>
       <!-- Navbar -->
-      <div class="hidden">
+      <div class="">
         <div class="hidden sm:flex font-bold">sm-</div>
         <div class="hidden md:flex font-bold">md-</div>
         <div class="hidden lg:flex font-bold">lg-</div>
         <div class="hidden xl:flex font-bold">xl</div>
+        <div class="hidden 2xl:flex font-bold">2xl</div>
       </div>
 
       <nav class="flex gap-6 justify-around items-center font-semibold">
@@ -81,7 +82,7 @@
     </header>
 
     <main
-      class="flex flex-col gap-6 my-4 md:my-6 sm:px-20 md:px-36 lg:px-52 xl:px-96 font-medium"
+      class="flex flex-col gap-6 my-4 md:my-6 sm:px-20 md:px-36 lg:px-52 2xl:px-96 font-medium"
     >
       <!-- About me -->
       <section
@@ -198,32 +199,42 @@
         <div class="flex flex-col xl:flex-row lg:flex-row justify-between mx-4">
           <div>
             <span class="uppercase font-bold">Web technologies</span>
-            <div class="flex flex-col items-left border-l-2 border-txt_secondary pl-2 gap-2">
-              <span class="flex items-center gap-2"><i class="devicon-javascript-plain text-2xl"></i>Javascript</span>
-              <span class="flex items-center gap-2"><i class="devicon-html5-plain-wordmark text-2xl"></i>HTML</span>
-              <span class="flex items-center gap-2"><i class="devicon-css3-plain-wordmark text-2xl"></i>CSS</span>
-              <span class="flex items-center gap-2"><i class="devicon-tailwindcss-original text-2xl"></i>Tailwind CSS</span>
-              <span class="flex items-center gap-2"><i class="devicon-laravel-original text-2xl"></i>Laravel</span>
-              <span class="flex items-center gap-2"><i class="devicon-react-original text-2xl"></i>React</span>
-              <span class="flex items-center gap-2"><i class="devicon-php-plain text-2xl"></i>PHP</span>
+            <div class="flex flex-col items-left border-l-2 border-txt_secondary text-txt_secondary transition-all duration-300 pl-2 gap-2">
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-html5-plain-wordmark text-2xl"></i>HTML</span>
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-css3-plain-wordmark text-2xl"></i>CSS</span>
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-javascript-plain text-2xl"></i>Javascript</span>
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-php-plain text-2xl"></i>PHP</span>
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-laravel-original text-2xl"></i>Laravel</span>
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-react-original text-2xl"></i>React</span>
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-tailwindcss-original text-2xl"></i>Tailwind CSS</span>
             </div>
           </div>
 
           <div>
             <span class="uppercase font-bold">Languages</span>
-            <div class="flex flex-col items-left border-l-2 border-txt_secondary pl-2 gap-2">
-              <span class="flex items-center gap-2"><i class="devicon-python-plain text-2xl"></i>Python</span>
-              <span class="flex items-center gap-2"><i class="devicon-c-plain text-2xl"></i>C</span>
-              <span class="flex items-center gap-2"><i class="devicon-cplusplus-plain text-2xl"></i>C++</span>
-              <span class="flex items-center gap-2"><i class="devicon-java-plain text-2xl"></i>Java</span>
-              <span class="flex items-center gap-2"><i class="devicon-bash-plain text-2xl"></i>BASH</span>
+            <div class="flex flex-col items-left border-l-2 border-txt_secondary text-txt_secondary transition-all duration-300 pl-2 gap-2">
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-bash-plain text-2xl"></i>BASH</span>
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-c-plain text-2xl"></i>C</span>
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-cplusplus-plain text-2xl"></i>C++</span>
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-java-plain text-2xl"></i>Java</span>
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-python-plain text-2xl"></i>Python</span>
             </div>
           </div>
 
           <div>
             <span class="uppercase font-bold">Databases</span>
-            <div class="flex flex-col items-left border-l-2 border-txt_secondary pl-2 gap-2">
-              <span class="flex items-center gap-2"><i class="devicon-mysql-original text-2xl"></i>MySql</span>
+            <div class="flex flex-col items-left border-l-2 border-txt_secondary text-txt_secondary transition-all duration-300 pl-2 gap-2">
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-mysql-original text-2xl"></i>MySql</span>
+            </div>
+          </div>
+
+          <div>
+            <span class="uppercase font-bold">Other useful things</span>
+            <div class="flex flex-col items-left border-l-2 border-txt_secondary text-txt_secondary transition-all duration-300 pl-2 gap-2">
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-vscode-plain text-2xl"></i>VSCode</span>
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-latex-original text-2xl"></i>Latex</span>
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-github-original text-2xl"></i>Github</span>
+              <span class="flex items-center gap-2 hover:text-txt_main hover:scale-[1.02]"><i class="devicon-git-plain text-2xl"></i>Git</span>
             </div>
           </div>
         </div>
