@@ -54,19 +54,27 @@
     </script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
 
     <!-- Title -->
     <title>Home | Enrico Favale</title>
   </head>
 
-  <body class="bg-bg_main text-txt_main font-mono m-0 px-14 py-6">
-    <header class="flex flex-col hidden">
+  <body class="bg-bg_main text-txt_main font-mono m-0 px-14 my-2">
+    <header>
       <!-- Navbar -->
-      <div class="hidden sm:flex font-bold">sm</div>
-      <div class="hidden md:flex font-bold">md</div>
-      <div class="hidden lg:flex font-bold">lg</div>
-      <div class="hidden xl:flex font-bold">xl</div>
+      <div class="hidden">
+        <div class="hidden sm:flex font-bold">sm-</div>
+        <div class="hidden md:flex font-bold">md-</div>
+        <div class="hidden lg:flex font-bold">lg-</div>
+        <div class="hidden xl:flex font-bold">xl</div>
+      </div>
+
+      <nav class="flex gap-6 justify-around items-center font-semibold">
+        <a href="#" class="py-4">
+          <img src="assets/img/logo.png" alt="enrico favale" class="w-64" />
+        </a>
+      </nav>
     </header>
 
     <main
@@ -75,6 +83,7 @@
       <!-- About me -->
       <section
         class="flex flex-row border-2 border-txt_secondary rounded-lg p-4 gap-4"
+        id="about"
       >
         <!-- Image in about me (show only on desktop) -->
         <div class="w-36 h-36 perspective hidden xl:flex shrink-0">
@@ -104,32 +113,14 @@
               Enrico Favale
             </div>
 
-            <div class="hidden sm:flex gap-2 items-center">
-              <a
-                href="https://github.com/enrico-favale"
-                target="_blank"
-                class="border border-txt_secondary rounded itemes-center flex justify-center p-3"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
-
-              <a
-                href="mailto:enrico.favale@outlook.it"
-                target="_blank"
-                class="border border-txt_secondary rounded items-center flex justify-center p-3"
-              >
-                <i class="fa fa-envelope"></i>
-              </a>
-
-              <a
-                href="assets/files/Curriculum FAVALE Enrico.pdf"
-                download="FAVALE_Enrico Resume.pdf"
-                class="border border-txt_secondary rounded itemes-center flex justify-center p-2"
-              >
-                <i class="fa-solid fa-download"></i>
-                <span class="pl-2">Resume</span>
-              </a>
-            </div>
+            <a
+              href="assets/files/Curriculum FAVALE Enrico.pdf"
+              download="FAVALE_Enrico Resume.pdf"
+              class="border border-txt_secondary rounded itemes-center flex justify-center p-2"
+            >
+              <i class="fa-solid fa-download"></i>
+              <span class="pl-2">Resume</span>
+            </a>
           </div>
 
           <span class="text-txt_secondary">
@@ -195,8 +186,26 @@
         </div>
       </section>
 
+      <!-- Technologies -->
+      <section class="flex flex-col" id="technologies">
+        <span
+          class="uppercase font-bold border-y-2 border-txt_secondary py-2 px-4"
+        >
+          Technologies
+        </span>
+      </section>
+
+      <!-- Projects -->
+      <section class="flex flex-col" id="projects">
+        <span
+          class="uppercase font-bold border-y-2 border-txt_secondary py-2 px-4"
+        >
+          Projects
+        </span>
+      </section>
+
       <!-- Education-->
-      <section class="flex flex-col">
+      <section class="flex flex-col" id="education">
         <span
           class="uppercase font-bold border-y-2 border-txt_secondary py-2 px-4 mb-2"
         >
@@ -306,17 +315,8 @@
         </div>
       </section>
 
-      <!-- Projects -->
-      <section class="flex flex-col">
-        <span
-          class="uppercase font-bold border-y-2 border-txt_secondary py-2 px-4"
-        >
-          Projects
-        </span>
-      </section>
-
       <!-- Contact me -->
-      <section class="flex flex-col">
+      <section class="flex flex-col" id="contact-me">
         <span
           class="uppercase font-bold border-y-2 border-txt_secondary py-2 px-4"
         >

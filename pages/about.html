@@ -26,8 +26,8 @@
     />
 
     <!-- Personal css -->
-    <link rel="stylesheet" href="./assets/css/fonts.css" />
-    <link rel="stylesheet" href="./assets/css/img-animation.css" />
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/img-animation.css" />
 
     <!-- FontAwesome -->
     <link
@@ -54,27 +54,70 @@
     </script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
 
     <!-- Title -->
     <title>About | Enrico Favale</title>
   </head>
 
   <body class="bg-bg_main text-txt_main font-mono m-0 px-14 py-6">
-    <header class="flex flex-col">
+    <header>
       <!-- Navbar -->
-      <div class="hidden sm:flex font-bold">sm</div>
-      <div class="hidden md:flex font-bold">md</div>
-      <div class="hidden lg:flex font-bold">lg</div>
-      <div class="hidden xl:flex font-bold">xl</div>
+      <div class="hidden">
+        <div class="hidden sm:flex font-bold">sm-</div>
+        <div class="hidden md:flex font-bold">md-</div>
+        <div class="hidden lg:flex font-bold">lg-</div>
+        <div class="hidden xl:flex font-bold">xl</div>
+      </div>
+
+      <nav class="flex gap-6 justify-around items-center font-semibold">
+        <a href="../index.html" class="mt-4">
+          <img src="../assets/img/logo.png" alt="enrico favale" class="w-64" />
+        </a>
+      </nav>
     </header>
 
     <main
       class="flex flex-col gap-4 my-4 md:my-6 sm:px-20 md:px-36 lg:px-52 xl:px-96 font-medium"
     >
+      <!-- Photo -->
+      <div class="flex justify-center items-center gap-2">
+        <!-- Left line -->
+        <div class="border border-txt_secondary w-full"></div>
+
+        <!-- Image -->
+        <div class="w-36 h-36 perspective mx-2 shrink-0">
+          <div id="animated-image-container" class="relative w-full h-full">
+            <!-- Image front -->
+            <img
+              id="front-image"
+              src="../assets/img/first.jpeg"
+              alt="Front Photo"
+              class="rounded-full object-cover object-right-top w-full h-full absolute"
+            />
+
+            <!-- Image back -->
+            <img
+              id="back-image"
+              src="../assets/img/second.jpeg"
+              alt="Back Photo"
+              class="rounded-full object-cover w-full h-full absolute"
+              style="object-position: 50% -20px"
+            />
+          </div>
+        </div>
+
+        <!-- Right line -->
+        <div class="border border-txt_secondary w-full"></div>
+      </div>
+
       <!-- About me section -->
       <section class="flex flex-col gap-4">
-        <span class="text-2xl md:text-3xl font-bold uppercase">About me</span>
+        <div class="flex items-center gap-4">
+          <span class="text-2xl md:text-3xl font-bold uppercase shrink-0">About</span>
+          <div class="border border-txt_secondary w-full"></div>
+        </div>
+        
 
         <div class="flex flex-col gap-4">
           <p class="text-justify border-l-2 border-txt_secondary pl-4 ml-4">
@@ -115,7 +158,11 @@
 
       <!-- Education section -->
       <section class="flex flex-col gap-4">
-        <span class="text-2xl md:text-3xl font-bold uppercase">Education</span>
+        <div class="flex items-center gap-4">
+          <span class="text-2xl md:text-3xl font-bold uppercase shrink-0">Education</span>
+          <div class="border border-txt_secondary w-full"></div>
+        </div>
+        
 
         <div class="flex flex-col gap-4 justify-center">
           <!-- Magistrale -->
@@ -174,9 +221,7 @@
                     </li>
                     <li>- Machine Learning algorithms and techniques.</li>
                     <li>- Data mining and data analysis.</li>
-                    <li>
-                      - Big Data technologies and frameworks.
-                    </li>
+                    <li>- Big Data technologies and frameworks.</li>
                     <li>- Neural networks and deep learning.</li>
                     <li>- Statistical analysis and predictive modeling.</li>
                   </ul>
@@ -240,7 +285,8 @@
               <div class="my-1 flex text-justify text-txt_secondary">
                 <div class="font-semibold text-txt_main">Thesis:</div>
                 <div class="ml-2">
-                  TRAMA: A Case Study for the Design and Development of Real-Time Applications
+                  TRAMA: A Case Study for the Design and Development of
+                  Real-Time Applications
                 </div>
               </div>
 
